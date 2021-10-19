@@ -1,5 +1,6 @@
 from salesman import SalesMan
 
+
 matrix = [
     [ 0., 20, 18, 12,  8],
     [ 5,  0, 14,  7, 11],
@@ -7,8 +8,9 @@ matrix = [
     [11, 17, 11,  0, 12],
     [ 5,  5,  5,  5,  0],
 ]
-
+print('\n'.join('\t'.join(map(str, x)) for x in matrix))
 print(SalesMan(matrix).solve())
+print()
 
 matrix = [
     [0., 7, 12, 25, 10],
@@ -18,8 +20,10 @@ matrix = [
     [0,  9, 12, 17, 0]
 ]
 
+print('\n'.join('\t'.join(map(str, x)) for x in matrix))
 print()
 print(SalesMan(matrix).solve())
+print()
 
 matrix = [
     [0., 68, 73, 24, 70,  9],
@@ -29,9 +33,10 @@ matrix = [
     [60, 18,  3, 45, 0, 58],
     [16, 82, 11, 60, 48, 0]
 ]
-
+print('\n'.join('\t'.join(map(str, x)) for x in matrix))
 print()
 print(SalesMan(matrix).solve())
+print()
 
 # Task: V 12 -> v 4
 
@@ -43,7 +48,7 @@ matrix = [
     [6, 18,  31, 45, 0, 48],
     [16, 12, 0, 60, 48, 0]
 ]
-
-salesman = SalesMan(matrix)
-# print(salesman.base)
-print(salesman.solve(tracing=True))
+print()
+print('\n'.join('\t'.join(map(str, x)) for x in matrix))
+print()
+print(SalesMan(matrix).solve(tracing=True))
